@@ -1,0 +1,92 @@
+{
+  "books": [
+    {
+      "id": "8adf1d2a-e135-4c57-b72a-1a1b3cf5e8c6",
+      "title": "To Kill a Mockingbird",
+      "price": "100",
+      "author": "Harper Lee",
+      "pagesCount": "281",
+      "publishedYear": "1960",
+      "genre": "Fiction",
+      "language": "English",
+      "image": "https://m.media-amazon.com/images/I/81OthjkJBuL._AC_UY327_FMwebp_QL65_.jpg"
+    },
+    {
+      "id": "c4e93c8e-8b33-4577-9097-5319b5e22e78",
+      "title": "1984",
+      "price": "90",
+      "author": "George Orwell",
+      "pagesCount": "328",
+      "publishedYear": "1949",
+      "genre": "Dystopian",
+      "language": "English",
+      "image": "https://m.media-amazon.com/images/I/71kxa1-0mfL._AC_UY327_FMwebp_QL65_.jpg"
+    },
+    {
+      "id": "3c1e5c5d-2b1d-4af0-bbd7-916e1b55c73b",
+      "title": "Pride and Prejudice",
+      "price": "120",
+      "author": "Jane Austen",
+      "pagesCount": "279",
+      "publishedYear": "1813",
+      "genre": "Romance",
+      "language": "English",
+      "image": "https://m.media-amazon.com/images/I/91HHqVTAJQL._AC_UY327_FMwebp_QL65_.jpg"
+    },
+    {
+      "id": "5b9a77a7-bc78-4cfa-91f7-e1465f66789b",
+      "title": "The Great Gatsby",
+      "price": "80",
+      "author": "F. Scott Fitzgerald",
+      "pagesCount": "180",
+      "publishedYear": "1925",
+      "genre": "Tragedy",
+      "language": "English",
+      "image": "https://m.media-amazon.com/images/I/81af+MCATTL._AC_UY327_FMwebp_QL65_.jpg"
+    },
+    {
+      "id": "fc26e25b-456c-4037-bd62-7a29f739c76d",
+      "title": "Moby Rick",
+      "price": "110",
+      "author": "Herman Melville",
+      "pagesCount": "635",
+      "publishedYear": "1851",
+      "genre": "Adventure",
+      "language": "English",
+      "image": "https://m.media-amazon.com/images/I/71aFt4+OTOL._AC_UY327_FMwebp_QL65_.jpg"
+    },
+    {
+      "id": "e6cf1744-c5d9-42a7-8516-5b6bb156f72e",
+      "title": "The Catcher in the Rye",
+      "price": "95",
+      "author": "J.D. Salinger",
+      "pagesCount": "214",
+      "publishedYear": "1951",
+      "genre": "Fiction",
+      "language": "English",
+      "image": "https://m.media-amazon.com/images/I/81OthjkJBuL._AC_UY327_FMwebp_QL65_.jpg"
+    },
+    {
+      "id": "b9726237-d8e3-48f3-a5b6-927918a79aa3",
+      "title": "The Hobbit",
+      "price": "105",
+      "author": "J.R.R. Tolkien",
+      "pagesCount": "310",
+      "publishedYear": "1937",
+      "genre": "Fantasy",
+      "language": "English",
+      "image": "https://m.media-amazon.com/images/I/91b0C2YNSrL._AC_UY327_FMwebp_QL65_.jpg"
+    },
+    {
+      "id": "6dc70893-929c-49e4-b3e5-b0656ab65b41",
+      "title": "Brave New World",
+      "price": "88",
+      "author": "Aldous Huxley",
+      "pagesCount": "268",
+      "publishedYear": "1932",
+      "genre": "Dystopian",
+      "language": "English",
+      "image": "https://m.media-amazon.com/images/I/71UwSHSZRnS._AC_UY327_FMwebp_QL65_.jpg"
+    }
+  ]
+}
