@@ -1,5 +1,5 @@
 import * as React from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import Button from "@mui/material/Button";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
@@ -56,7 +56,7 @@ function Navbar() {
               textDecoration: "none",
             }}
           >
-            <NavLink to="">BOOK</NavLink>
+            <Link to="">BOOK</Link>
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
@@ -122,7 +122,7 @@ function Navbar() {
               textDecoration: "none",
             }}
           >
-            <NavLink to="">BOOK</NavLink>
+            <Link to="">BOOK</Link>
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             {pages.map((page) => (

@@ -1,5 +1,5 @@
 import * as React from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import Button from "@mui/material/Button";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
@@ -14,7 +14,7 @@ import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 import AutoStoriesIcon from "@mui/icons-material/AutoStories";
 
-const pages = ["Home", "Books", "Add"];
+const pages = ["Admin", "Books", "Add"];
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
 
 function AdminNav() {
@@ -54,7 +54,7 @@ function AdminNav() {
               textDecoration: "none",
             }}
           >
-            <NavLink to="">BOOK</NavLink>
+            <Link to="">BOOK</Link>
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
@@ -89,7 +89,7 @@ function AdminNav() {
                   <Typography sx={{ textAlign: "center" }}>
                     <NavLink
                       to={
-                        page.toLowerCase() == "home" ? "" : page.toLowerCase()
+                        page.toLowerCase() == "admin" ? "" : page.toLowerCase()
                       }
                     >
                       {page}
@@ -120,7 +120,7 @@ function AdminNav() {
               textDecoration: "none",
             }}
           >
-            <NavLink to="">BOOK</NavLink>
+            <NavLink to="admin">BOOK</NavLink>
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             {pages.map((page) => (
@@ -130,7 +130,7 @@ function AdminNav() {
                 sx={{ my: 2, color: "white", display: "block" }}
               >
                 <NavLink
-                  to={page.toLowerCase() == "home" ? "" : page.toLowerCase()}
+                  to={page.toLowerCase() == "admin" ? "" : page.toLowerCase()}
                 >
                   {page}
                 </NavLink>

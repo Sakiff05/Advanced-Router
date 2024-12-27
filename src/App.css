@@ -101,3 +101,9 @@ footer {
 .welcome {
   height: calc(100vh - 88px);
 }
+
+.active {
+  background-color: #81b7ed;
+  padding: 0.6rem;
+  border-radius: 5px;
+}
