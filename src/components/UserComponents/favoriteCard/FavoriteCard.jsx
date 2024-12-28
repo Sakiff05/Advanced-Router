@@ -13,11 +13,9 @@ import { useContext } from "react";
 import { IconButton } from "@mui/material";
 import { basketContext } from "../../../context/BasketProvider";
 
-function BookCard({ title, img, id }) {
+function FavoriteCard({ title, img, id }) {
   const { favorites, handleAddFavorites } = useContext(favoriteContext);
   let isExist = favorites.find((book) => book.id == id);
-
-  const { basket, handleAddBasket } = useContext(basketContext);
 
   return (
     <Card sx={{ maxWidth: 345 }} className="w-full">
@@ -34,14 +32,6 @@ function BookCard({ title, img, id }) {
           </Link>
         </Button>
         <div>
-          <IconButton
-            size="small"
-            sx={{ color: "blue" }}
-            onClick={() => handleAddBasket(id)}
-          >
-            <ShoppingBasketIcon />
-          </IconButton>
-
           {isExist ? (
             <IconButton
               size="small"
@@ -65,4 +55,4 @@ function BookCard({ title, img, id }) {
   );
 }
 
-export default BookCard;
+export default FavoriteCard;

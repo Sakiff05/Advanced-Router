@@ -15,6 +15,8 @@ import MenuItem from "@mui/material/MenuItem";
 import ShoppingBasketIcon from "@mui/icons-material/ShoppingBasket";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import AutoStoriesIcon from "@mui/icons-material/AutoStories";
+import { favoriteContext } from "../../../context/FavoriteProvider";
+import { basketContext } from "../../../context/BasketProvider";
 
 const pages = ["Home", "Books"];
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
@@ -37,6 +39,10 @@ function Navbar() {
   const handleCloseUserMenu = () => {
     setAnchorElUser(null);
   };
+
+  const { favorites } = React.useContext(favoriteContext);
+  const { basket } = React.useContext(basketContext);
+  const basketCount = basket.reduce((acc, el) => el.count + acc, 0);
 
   return (
     <AppBar position="fixed">
@@ -141,12 +147,28 @@ function Navbar() {
           </Box>
           <Box sx={{ flexGrow: 0, marginRight: "1rem" }}>
             <NavLink to="basket">
-              <ShoppingBasketIcon sx={{ fontSize: "2rem" }} />
+              <IconButton>
+                <ShoppingBasketIcon
+                  sx={{ fontSize: "2rem", color: "white" }}
+                  className="relative "
+                />
+                <span className="inline-flex items-center rounded-md bg-red-50 px-2 py-1 text-xs font-medium text-red-700 ring-1 ring-inset ring-red-600/10 absolute top-0 left-8">
+                  {basketCount}
+                </span>
+              </IconButton>
             </NavLink>
           </Box>
           <Box sx={{ flexGrow: 0, marginRight: "1rem" }}>
             <NavLink to="favorites">
-              <FavoriteIcon sx={{ fontSize: "2rem" }} />
+              <IconButton>
+                <FavoriteIcon
+                  sx={{ fontSize: "2rem", color: "white" }}
+                  className="relative "
+                />
+                <span className="inline-flex items-center rounded-md bg-red-50 px-2 py-1 text-xs font-medium text-red-700 ring-1 ring-inset ring-red-600/10 absolute top-0 left-8">
+                  {favorites.length}
+                </span>
+              </IconButton>
             </NavLink>
           </Box>
           <Box sx={{ flexGrow: 0 }}>
